@@ -1,0 +1,2025 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta content="width=device-width,initial-scale=1,user-scalable=no" name="viewport" />
+
+    <title>Title Name</title>
+    <meta name="description" content="Write description here" />
+    <meta content="" name="keywords" />
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="titleicon.png">
+    <link rel="stylesheet" type="text/css" href="3dParty/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/global.min.css">
+    <link rel="stylesheet" type="text/css" href="3dParty/rs-plugin/css/pi.settings.css" media=print>
+    <link rel="stylesheet" type="text/css" href="css/typo.min.css">
+    <link rel="stylesheet" type="text/css" href="3dParty/colorbox/colorbox.css" media=print>
+    <link rel="stylesheet" type="text/css" href="css/tooltips.min.css" media=print>
+    <link rel="stylesheet" type="text/css" href="css/testimonials.min.css" media=print>
+    <link rel="stylesheet" type="text/css" href="css/accordion.min.css" media=print>
+   
+    <link rel="stylesheet" type="text/css" href="css/social.min.css">
+    <link rel="stylesheet" type="text/css" href="css/portfolio.min.css" media=print>
+    <link rel="stylesheet" type="text/css" href="settings/settings-panel.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="3dParty/fontello/css/fontello.css">
+    <link rel="canonical" href="#">
+
+    <style>
+        .the-form {
+            box-sizing: border-box;
+            background-color: rgba(0, 0, 0, 0.4);
+            height: 100%;
+            padding: 0px 30px;
+            box-sizing: border-box;
+        }
+
+        .the-form input,
+        .the-form textarea {
+            width: 115%;
+            height: 50px;
+            margin: 0px;
+        }
+
+        /* faqs */
+
+        /*_________________  Accordion
+________________________________________*/
+
+        .accordion {
+            position: relative;
+            margin: 60px auto;
+            width: 85%;
+        }
+
+        [id*="open-accordion"],
+        [id*="close-accordion"] {
+            background: #ffa314;
+            border-bottom: 1px solid #fff;
+            line-height: 40px;
+            height: 40px;
+            display: block;
+            margin: 0 auto;
+            position: relative;
+            width: 99%;
+        }
+
+        [id*="close-accordion"] {
+            display: none;
+        }
+
+        .accordion a {
+            color: #fff;
+            font-size: 1.25em;
+            font-weight: normal;
+            padding-left: 2%;
+            text-decoration: none;
+            text-shadow: none;
+            border: 0.5px solid #fff;
+        }
+
+        [id*="open-accordion"]:after,
+        [id*="close-accordion"]:after {
+            content: "";
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-top: 10px solid rgba(255, 255, 255, 0.6);
+            position: absolute;
+            right: 5px;
+            top: 15px;
+            z-index: 999;
+            color: #fff !important;
+            transform: rotate(-90deg);
+            -webkit-transform: rotate(-90deg);
+        }
+.icon-button .icon-twitter {
+	color: #4099ff;
+}
+        .target-fix {
+            display: block;
+            top: 0;
+            left: 0;
+            position: fixed;
+        }
+
+        .accordion-content {
+            background: #000;
+            height: 0;
+            margin: -1px auto 0;
+            padding: 0 2.5%;
+            position: relative;
+            overflow: hidden;
+            width: 99%;
+            color: #fff !important;
+            transition: all 0.1s ease;
+            -webkit-transition: all 0.1s ease;
+            -moz-transition: all 0.1s ease;
+        }
+
+        .accordion span:target~.accordion-content {
+            display: block;
+            height: auto;
+            padding-bottom: 25px;
+            padding-top: 10px;
+        }
+
+        .accordion span:target~[id*="close-accordion"] {
+            display: block;
+        }
+
+        .accordion span:target~[id*="open-accordion"] {
+            display: none;
+        }
+
+        .accordion span:target~[id*="close-accordion"]:after {
+            border-top: 10px solid #333;
+            transform: rotate(0deg);
+            -webkit-transform: rotate(0deg);
+        }
+
+        /* Style the tab */
+
+        .tab {
+            float: left;
+            border: 1px solid #ccc;
+            background-color: #000;
+            width: 30%;
+            height: 100%;
+        }
+
+        /* Style the buttons inside the tab */
+
+        .tab button {
+            display: block;
+            background-color: inherit;
+            color: #fff;
+            padding: 22px 16px;
+            width: 100%;
+            /* border: none; */
+            outline: none;
+            text-align: left;
+            cursor: pointer;
+            transition: 0.3s;
+            font-size: 17px;
+        }
+
+        /* Change background color of buttons on hover */
+
+        .tab button:hover {
+            background-color: #fff;
+            color: #ffa314;
+        }
+
+        /* Create an active/current "tab button" class */
+
+        .tab button.active {
+            background-color: #ffa314;
+            color: #fff;
+        }
+
+        /* Style the tab content */
+
+        .tabcontent {
+            float: left;
+            padding: 30px 12px;
+            border: 1px solid #ccc;
+            width: 70%;
+            /*border-left: none;*/
+            height: 100%;
+            min-height: 486px;
+        }
+
+        #left-arr,
+        #right-arr {
+            position: absolute;
+            top: 50px;
+            color: #FFF;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 2em;
+            margin: 0px 10px;
+        }
+
+        #right-arr {
+            left: 96%;
+        }
+
+        .title {
+            text-align: center;
+            margin: auto;
+        }
+
+        .team-bg {
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+            min-height: 200px;
+            position: relative;
+        }
+
+        .team {
+            width: 20%;
+            min-height: 90px;
+            padding: 1%;
+            position: absolute;
+            transition: 0.5s all;
+            filter: grayscale(100%);
+            text-align: center;
+        }
+
+        .team:hover {
+            filter: grayscale(0%);
+        }
+
+        #left-arr,
+        #right-arr {
+            color: #333 !important;
+        }
+
+        .team-img {
+            width: 90%;
+            transition: 0.6s all;
+            height: 80px;
+            border-radius: 75px;
+            margin: auto;
+        }
+
+        #contactForm select {
+            width: 115%;
+        }
+
+        @media screen and (max-width:960px) {
+            .team {
+                width: 100%;
+            }
+            #right-arrow,
+            #right-arr {
+                left: 85%;
+            }
+        }
+
+        .white-cls {
+            color: white !important
+        }
+
+        .pi-text-bg-base {
+            text-align: center;
+        }
+
+        .mobile-sty {
+            margin: 80px 100px 40px 100px;
+        }
+
+        @media screen and (max-width: 720px) {
+            .mobile-sty {
+                margin: 80px 35px 40px 35px !important;
+            }
+        }
+    </style>
+
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-60733201-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+</head>
+
+<body>
+
+    <script type="application/ld+json">
+        {
+            "@context": "#",
+            "@type": "type of Business",
+            "name": "company name",
+            "image": "#",
+            "@id": "",
+            "url": "#",
+            "telephone": "+912030605040",
+            "address": {
+                "@type": "Address",
+                "streetAddress": "#",
+                "addressLocality": "#",
+                "postalCode": "#",
+                "addressCountry": "IN"
+            },
+            "geo": {
+                "@type": "#",
+                "latitude": 6666666,
+                "longitude": 55555
+            }
+        }
+    </script>
+
+
+    <div id="pi-all">
+
+        <div class="pi-header">
+
+            <div class="pi-section-w pi-section-dark">
+
+                <div class="pi-section pi-row-sm">
+                    <div class="pi-row-block pi-row-block-txt">
+
+                        <i class="fa fa-phone" style="font-size:15px;color:#FFA500"></i>
+                        <span class="white-cls"> Call Us:   </span>
+                        <strong class="white-cls">
+              <a href="tel:0070080090">0070080090</a>
+              </strong>
+                    </div>
+                    
+                    <div class="pi-row-block pi-row-block-txt pi-hidden-xs">
+
+                        <i class="fa fa-envelope" style="font-size:15px;color:#FFA500"></i>
+                        <span class="white-cls"> Email: senathana007@gmail                                                                                                                                           .com
+                </span>
+                    </div>
+
+
+
+                    <div class="pi-row-block pi-pull-right pi-hidden-2xs">
+
+                        <ul class="pi-social-icons pi-stacked pi-jump pi-full-height pi-bordered pi-small pi-colored-bg clearFix">
+
+                            <li>
+							
+
+                               <a href="#" class="icon-button twitter"><i class="fa fa-twitter" style="font-size:20px;color:white"></i>
+							   </a>
+
+                            </li>
+
+                            <li>
+
+                                <a href="#" target="_blank" class="pi-social-icon-facebook">
+                    <i class="fa fa-facebook" style="font-size:20px;color:white"></i></a>
+					</li>
+                           
+
+                            <li>   <a href="#" target="_blank" class="pi-social-icon-linkedin">
+                    <i class="fa fa-linkedin" style="font-size:20px;color:white"></i></a>
+					</li>
+
+                                <li>
+
+                       <a href="#" target="_blank" class="pi-social-icon-facebook">
+                    <i class="fa fa-pinterest" style="font-size:20px;color:white"></i></a>
+                                </li>
+
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="pi-header-sticky">
+
+                <div class="pi-section-w pi-section-dark pi-shadow-bottom pi-row-reducible">
+
+                    <div class="pi-section pi-row-lg">
+
+                        <div class="pi-row-block pi-row-block-logo" style="padding-top: 13px;">
+
+                            <a href="#"> <img src="img/logohere.png" alt="company logo here"> </a>
+                        </div>
+
+                        <div class="pi-row-block pi-row-block-txt pi-hidden-2xs">
+                        </div>
+
+                        <div class="pi-row-block pi-pull-right" style="margin-top : 10px !important;">
+
+                            <ul class="pi-simple-menu pi-has-hover-border pi-full-height pi-hidden-sm">
+
+                                <li>
+                                    <a href="#">
+                                        <span>Home</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <span>About Us</span>
+                                    </a>
+                                </li>
+
+                                <li class="active pi-has-dropdown">
+                                    <a href="#">
+                                    <span>Services</span>
+                                    </a>
+                                    <ul class="pi-submenu pi-has-border pi-items-have-borders pi-has-shadow pi-submenu-dark fa fa-caret-down" aria-hidden="true">
+                                        <li>
+                                            <a href="#">
+                                                <span>Search Engine Optimisation (SEO)</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                            <span>Social Media Marketing</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                            <span>Paid Search (Adwords)</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                            <span>Website Designing</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                            <span>Website Analytics</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                            <span>Mobile Marketing</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                            <span>App Development</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                            <span>Video Production</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><span>Email Marketing</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                            <span>App Store Optimisation</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                            <span>Digital Marketing Training</span>
+                                            </a>
+                                        </li>
+
+                                    </ul>
+
+                                </li>
+                                <li>
+                                    <a href="#">
+                                    <span>Team</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                    <span>Contact</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                    <span>Career</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">
+                                    <span>Blog</span>
+                                    </a>
+                                </li>
+                                <!-- <li>
+                                    <a href="#">
+
+                                        <span>
+                        Support
+                      </span>
+                                    </a>
+                                </li>  -->
+
+                            </ul>
+                        </div>
+
+                        <div class="pi-row-block pi-pull-right pi-hidden-lg-only pi-hidden-md-only">
+
+                            <button class="btn pi-btn pi-mobile-menu-toggler" data-target="#pi-main-mobile-menu">
+
+                                <i class="icon-menu pi-text-center"></i>
+                            </button>
+                        </div>
+
+                        <div id="pi-main-mobile-menu" class="pi-section-menu-mobile-w pi-section-dark">
+
+                            <div class="pi-section-menu-mobile">
+
+                                <form class="form-inline pi-search-form-wide ng-pristine ng-valid">
+
+                                    <div class="pi-input-with-icon">
+
+                                        <div class="pi-input-icon">
+
+                                            <i class="icon-search-1">
+                        </i>
+                                        </div>
+
+                                        <input type="text" class="form-control pi-input-wide" placeholder="Search">
+                                    </div>
+                                </form>
+
+                                <ul class="pi-menu-mobile pi-items-have-borders pi-menu-mobile-dark">
+
+                                    <li>
+                                        <a href="#">
+                                            <span>
+                          Home
+                        </span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <span>
+                          About Us
+                        </span>
+                                        </a>
+                                    </li>
+
+                                    <li class="active">
+                                        <a href="#">
+
+                                            <span>
+                          Services
+                        </span>
+                                        </a>
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    <span>
+                              Search Engine Optimisation (SEO)
+                            </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span>
+                              Social Media Marketing
+                            </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span>
+                              Paid Search (Adwords)
+                            </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span>
+                              Website Designing
+                            </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span>
+                              Website Analytics
+                            </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span>
+                              Mobile Marketing
+                            </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span>
+                              App Development
+                            </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                            <span>Video Production</span>
+                                            </a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><span>Email Marketing</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                            <span>App Store Optimisation</span>
+                                            </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                            <span>Digital Marketing Training</span>
+                                            </a>
+                                            </li>
+                                        </ul>
+
+                                    </li>
+                                    <li>
+                                        <a href="#">
+
+                                            <span>
+                          Team
+                        </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+
+                                            <span>
+                          Career</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+
+                                            <span>
+                          Contact</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">
+                        
+                        <span>
+                          Blog
+                        </span>
+                      </a>
+                                    </li>
+                                    <!-- <li>
+                                    <a href="#">
+
+                                        <span>
+                        Support
+                      </span>
+                                    </a>
+                                </li> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="page">
+            <div class="pi-section-w pi-section-base pi-section-base-gradient">
+                <div class="pi-texture" style="background-image: url(img/imthi2.jpg); background-size: cover"></div>
+
+                <div class="pi-section" style="padding-top:0px;padding-bottom:0px;">
+                    <div class="pi-row" style="margin:0px 0px;">
+                        <div class="banner-part">
+                            <div class="pi-col-sm-8 pi-text-left pi-center-text-xs"><br><br>
+                                <h1 class="h2 pi-weight-300 pi-margin-bottom-5">
+                                    <br><br>
+                                    <b style="font-size:1.8em; line-height : 60px;">Website Designing company in Salem</b><br><br></h1>
+                                <span style="font-size:1.7em;color:#ffa314">Did you like this website? Well, we designed it ourselves!</span>
+                                <br><br><br>
+                                <h3 style="font-size:1.7em;">write details about company</h3>
+                            </div>
+                            <div class="pi-col-sm-4 the-form pi-text-right pi-center-text-xs">
+                                <div style="padding:30px 20px; position:relative; right:20px;">
+                                    <br>
+                                    <form class="form-style" id="contactForm" action="#.php" method="post">
+                                        <div class="pi-error-container">
+                                        </div>
+                                        <div class="pi-row pi-grid-small-margins">
+                                            <div class="pi-col-sm-12">
+                                                <div class="form-group">
+
+                                                    <input type="text" class=" form-control" id="cname" name="cname" value="" required placeholder="Your Name*">
+                                                </div>
+                                            </div>
+                                            <div class="pi-col-sm-12">
+                                                <div class="form-group">
+                                                    <input type="text" class=" form-control" name="cweb" value="" required placeholder="Your Company Name*">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="text" class=" form-control" id="cphone" name="cphone" value="" required placeholder="Your PhoneNO*">
+                                                </div>
+                                                <div class="form-group">
+                                                    <select class="form-control" id="cweb" name="cbudget" required>
+                                    <option value="">Select Budget*</option>
+                                    <option value="option value1">set budget 1</option>
+                                    <option value="option value2">set budget 2</option>
+                                    <option value="option value3">Set budget 3</option>
+                                    
+                                </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <textarea class=" form-control" id="cmsg" name="cmsg" required placeholder="Type Your Message here.." rows="3"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p>
+                                            <input style="text-align:center" type="submit" class="btn pi-btn-base" name="submit1" value="Send Message ">
+                                        </p>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pi-col-sm-7 pi-text-right pi-center-text-xs">
+                            <p class="lead-20 pi-weight-300 pi-margin-top-5 pi-margin-bottom-5"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--    <div class="pi-section-w pi-section-base pi-section-base-gradient">
+                <div class="pi-texture" style="background: url(img/hexagon.png) repeat">
+                </div>
+                <div class="pi-section" style="padding: 30px 40px 26px">
+                  <div class="pi-row">
+                    <div class="pi-col-sm-5 pi-center-text-xs">
+                      <h1 class="h2 pi-weight-300 pi-margin-bottom-5">
+                        Web Design Company in Bangalore
+                      </h1>
+                    </div>
+                    <div class="pi-col-sm-7 pi-text-right pi-center-text-xs">
+                      <p class="lead-20 pi-weight-300 pi-margin-top-5 pi-margin-bottom-5">
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+            <div class="pi-section-w pi-border-bottom pi-section-grey">
+                <div class="pi-section pi-titlebar pi-breadcrumb-only">
+                    <div class="pi-breadcrumb pi-center-text-xs">
+                        <ul>
+                            <li>
+                                <a href="#">
+                          Home
+                        </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                          Services
+                        </a>
+                            </li>
+                            <li>
+                                Website Designing Company in Salem
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- tabs -->
+            <!--<section class="tab-sec">
+          
+        
+        <div class="tab">
+          <button class="tablinks" onclick="openCity(event, 'question1')" id="defaultOpen">Web Design Process</button>
+          <button class="tablinks" onclick="openCity(event, 'question2')">Best Website Design company in Bangalore</button>
+          <button class="tablinks" onclick="openCity(event, 'question3')">Website design Bangalore</button>
+        </div>
+        
+        <div id="question1" class="tabcontent">
+            <section style="margin : 0px 15px;">
+                <div class="pi-row">
+                    <div class="pi-col-xs-6 pi-col-sm-4 ">
+                      <div class="pi-icon-box pi-icon-box-hover">
+                        <div class="pi-icon-box-icon pi-icon-box-icon-base">
+                          <i class="icon-lamp">
+                          </i>
+                        </div>
+                        <div class="pi-icon-box-content">
+                          <h4>
+                            <a class="pi-link-dark">   
+                              Analysis
+                            </a>
+                          </h4>
+                          <p class="pi-margin-bottom-10">
+                              The first step is always about information gathering, identifying things like the website purpose, website goals and target audience.
+                          </p>
+                          <p>
+                            
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pi-col-xs-6 pi-col-sm-4">
+                      <div class="pi-icon-box pi-icon-box-hover">
+                        <div class="pi-icon-box-icon pi-icon-box-icon-base">
+                          <i class="icon-monitor">
+                          </i>
+                        </div>
+                        <div class="pi-icon-box-content">
+                          <h4>
+                            <a class="pi-link-dark">
+                                Planning
+                            </a>
+                          </h4>
+                          <p class="pi-margin-bottom-10">
+                              A plan includes the definition of the sitemap, structure and technologies that are about to use.
+                          </p>
+                          <p>
+                            
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pi-clearfix pi-visible-xs">
+                    </div>
+                    <div class="pi-col-xs-6 pi-col-sm-4">
+                      <div class="pi-icon-box pi-icon-box-hover">
+                        <div class="pi-icon-box-icon pi-icon-box-icon-base">
+                          <i class="icon-brush">
+                          </i>
+                        </div>
+                        <div class="pi-icon-box-content">
+                          <h4>
+                            <a  class="pi-link-dark">
+                                Design
+                            </a>
+                          </h4>
+                          <p class="pi-margin-bottom-10">
+                              Not only do we focus on wire frame models and the usual style in this stage but also on the usability of the user interface for the best possible user experience.                      </p>
+                          <br>
+                          <br>
+                          <p>
+                            
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pi-col-xs-6 pi-col-sm-4 pi-padding-bottom-30">
+                      <div class="pi-icon-box pi-icon-box-hover">
+                        <div class="pi-icon-box-icon pi-icon-box-icon-base">
+                          <i class="icon-cog">
+                          </i>
+                        </div>
+                        <div class="pi-icon-box-content">
+                          <h4>
+                            <a  class="pi-link-dark">
+                                Content
+                            </a>
+                          </h4>
+                          <p class="pi-margin-bottom-10">
+                              Content is a very important part of the process in choosing to write text, photos or videos all optimised not only for your visitors but also for search engines.
+                          </p>
+                          <p>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pi-clearfix pi-visible-xs">
+                    </div>
+                    <div class="pi-col-xs-6 pi-col-sm-4 pi-padding-bottom-30">
+                      <div class="pi-icon-box pi-icon-box-hover">
+                        <div class="pi-icon-box-icon pi-icon-box-icon-base">
+                          <i class="icon-mobile">
+                          </i>
+                        </div>
+                        <div class="pi-icon-box-content">
+                          <h4>
+                            <a  class="pi-link-dark">
+                                Development
+                            </a>
+                          </h4>
+                          <p class="pi-margin-bottom-10">
+                              Here we actually create the website using in the hypertext markup language and cascading style sheer with the help from databases and other technologies as well if needed.                      </p>
+                          <p>
+                            
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pi-col-xs-6 pi-col-sm-4 pi-padding-bottom-30">
+                      <div class="pi-icon-box pi-icon-box-hover">
+                        <div class="pi-icon-box-icon pi-icon-box-icon-base">
+                          <i class="icon-search">
+                          </i>
+                        </div>
+                        <div class="pi-icon-box-content">
+                          <h4>
+                            <a  class="pi-link-dark">
+                            Testing
+                            </a>
+                          </h4>
+                          <p class="pi-margin-bottom-10">
+                              We test all the technical features like code and scripts compatibility with major browsers, but we also ask ourselves if the website really its purpose.                      </p>
+                          <p>
+                            
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pi-col-xs-6 pi-col-sm-4 pi-padding-bottom-30" style="margin-left : 30px;">
+                        <div class="pi-icon-box pi-icon-box-hover">
+                          <div class="pi-icon-box-icon pi-icon-box-icon-base">
+                            <i class="icon-cog">
+                            </i>
+                          </div>
+                          <div class="pi-icon-box-content">
+                            <h4>
+                              <a  class="pi-link-dark">
+                                  Deployment
+                              </a>
+                            </h4>
+                            <p class="pi-margin-bottom-10">
+                                After we launch the site our job is definitely not done yer. We always monitor whats happening after the start, enabling us to fix any possible deficiencies and if you want we can also manage to future maintenance and updates for you.
+                            </p>
+                            <p>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    
+                  </div>
+                  
+            </section>
+        </div>
+        
+        <div id="question2" class="tabcontent">
+          <p>We design amazing website designing, development and maintenance services. Get experts hands with simple solutions of the best Responsive website development company in Bangalore. We are the best web designing companies in Bangalore & cater to a diverse of businesses, running from start-ups to the huge players. Website is the core of your online marketing activities. If you look at all the marketing channels and techniques what they actually do is bring visitors to your website. And the main purpose of a website is turning these visitors into customer in marketing terms this is called conversions.</p>
+        </div>
+        
+        <div id="question3" class="tabcontent">
+            <p>A bad website will basically cause you to waste money and other marketing methods. Because you don’t need more visitors if you can’t turn them into prospects and then to customers. So the better your website looks the more visitors will convert into your customers. And it doesn’t really matter whether you sell consumer products online, provide services or build houses. Many people in the industry call themselves as web designers but they are really are just a bunch of geeks with some basic coding knowledge. But one thing is without even planning they will pretty quickly create a website for you with lots of information, photos, contacts. But the question to you is, Is that the way to turn the visitors into your customers? Is that what your need? And the answer is simple no. What you have to think is you have to look for companies who are serious about website design. We should always select and company who has a better planning.</p>
+        </div>
+      
+        <div class="clearfix"></div>
+      
+      </section>-->
+
+            <!-- <section style="margin:30px 80px 50px 100px;">
+                  <p> As you have just seen web design is a very complex process but we believe this is how website should be done and our customers
+                      agree and if you share our passions for high-quality websites.
+                      Let’s get in touch will be happy to help you with that we do best for anywhere in india and also for local bangalore web design company.
+                  </p>	            
+                     
+              </section>-->
+
+            <section>
+                <div class="row main_roow1 mobile-sty">
+                    <div class="row" style="margin:0px 0px 40px 0px;">
+                        <h2 style="color : #ffa314; font-size:25px;"><strong>Website Design & Development, Coimbatore Goal-Driven Websites:</strong></h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+						Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+						of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+						It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+						publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+              </p>
+                        <br>
+                        <h2 style="color : #ffa314; font-size:25px;"><strong>Bespoke Website Planning & Development in Coimbatore:</strong></h2>
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+						Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+						reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+						Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                        <br>
+                        <h2 style="color : #ffa314; font-size:25px;"><strong>Scalable yet Responsive Websites with Digimark Agency Coimbatore</strong></h2>
+                        <p style="text-align:justify;">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, 
+						as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. 
+						Various versions have evolved over the years, sometimes by accident, sometimes on purpose</p>
+                        <p><em>Design and build: PHP, Photoshop, python, java, Wordpress, Magento, Django, Shopify, opencart and many more. </em></p>
+                        <br>
+                        <h2 style="color : #ffa314; font-size:25px;"><strong>Website Content at Digimark Agency Coimbatore:</strong></h2>
+                        <p style="text-align:justify;">What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum 
+						has been the industry's standard dever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type 
+						specimen book it has?
+
+						</p>
+						
+                        <br>
+                        <h2 style="color : #ffa314; font-size:25px;"><strong>Website Designing at Digimark Agency Coimbatore</strong></h2>
+                        <p style="text-align:justify;">You can easily generate filler text using lorem ipsum sites, but if you’re running Microsoft Word 2010, you don’t even need to open your browser. 
+						You can easily generate filler text (handy when you’re working on layouts) in three styles.</p>
+                        <br>
+                        <h2 style="color : #ffa314; font-size:25px;"><strong>Testing or Tasting?</strong></h2>
+                        <p style="text-align:justify;">Software testing is an investigation conducted to provide stakeholders with information about the quality of the software product or service under test.[1] Software testing can also provide an objective, independent view of the software to
+						allow the business to appreciate and understand the risks of software implementation</p>
+                        <br>
+                        <h2 style="color : #ffa314; font-size:25px;"><strong>Deployment, Support, and Updates:</strong></h2>
+                        <p style="text-align:justify;"> Most educators and professionals do not consider it appropriate to use tertiary sources such as encyclopedias as a sole source for any information—citing an encyclopedia as an important reference in footnotes or bibliographies may result in censure or a failing grade. Wikipedia articles should be used for background information, as a reference for correct terminology and search terms
+						, and as a starting point for further research.</p>
+                        <p style="text-align:justify;"><em>Want to see our projects? Or rebrand your website? </em></p>
+                        <br>
+                        <h2 style="color : #ffa314; font-size:25px;"><strong>Best Web designing company in Coimbatore:</strong></h2>
+                        <p style="text-align:justify;">What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and
+						scrambled it to make a type specimen book it has?</p>
+                        <br>
+                        <h2 style="color : #ffa314; font-size:25px;"><strong>Web designing with imthi!</strong></h2>
+                        <p style="text-align:justify;">What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book it has? </p>
+                        <p style="text-align:justify;">n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying ...</p>
+                        <p>Imthi, a Web development services and designing company in Coimbatore offers a plethora of website services. </p>
+                        <ul>
+                            <li>Website Design and Development</li>
+                            <li>Web servicing and maintenance</li>
+                            <li>Branding design- logo creation, Brand recreation or Rebranding</li>
+                            <li>Mobile-specific website designing</li>
+                        </ul>
+                        <p style="text-align:justify;">These are just the services that are specific to website designing. Visit <a href="#">https://website link here/ </a> to know more. </p>
+
+                        <br>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="main_sec mobile-sty">FAQs for Digimark Web Designing</h2>
+                <div class="container faq-mob mobile-sty">
+                    <article class="static__content" itemscope="" itemtype="https://schema.org/FAQPage">
+                        <div itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Question">
+                            <h4 itemprop="name" style="color : #ffa314;">1. Why should you choose Digimark Agency, Coimbatore for web designing or web development ?</h4>
+                            <div itemprop="acceptedAnswer" itemscope="" itemtype="https://schema.org/Answer">
+                                <div itemprop="text">
+                                    <p style="text-align:justify;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
+									like Aldus PageMaker including versions of Lorem Ipsum</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Question">
+                            <h4 itemprop="name" style="color : #ffa314;">2. What is Web Development or Web Designing?</h4>
+                            <div itemprop="acceptedAnswer" itemscope="" itemtype="https://schema.org/Answer">
+                                <div itemprop="text">
+                                    <p style="text-align:justify;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+									and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem 
+									Ipsum </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Question">
+                            <h4 itemprop="name" style="color : #ffa314;"> 3. Purpose & Use of Web Development</h4>
+                            <div itemprop="acceptedAnswer" itemscope="" itemtype="https://schema.org/Answer">
+                                <div itemprop="text">
+                                    <p style="text-align:justify;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with 
+									desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Question">
+                            <h4 itemprop="name" style="color : #ffa314;"> 4. Why shouldn't you use an online website builder?</h4>
+                            <div itemprop="acceptedAnswer" itemscope="" itemtype="https://schema.org/Answer">
+                                <div itemprop="text">
+                                    <p style="text-align:justify;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with 
+									desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Question">
+                            <h4 itemprop="name" style="color : #ffa314;"> 5. What do professional website builders use?</h4>
+                            <div itemprop="acceptedAnswer" itemscope="" itemtype="https://schema.org/Answer">
+                                <div itemprop="text">
+									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
+									printer took a galley of type and scrambled it to make a type specimen book. It has survived not only 
+									five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Question">
+                            <h4 itemprop="name" style="color : #ffa314;"> 6. How can a website increase sales?</h4>
+                            <div itemprop="acceptedAnswer" itemscope="" itemtype="https://schema.org/Answer">
+                                <div itemprop="text">
+                                    <p style="text-align:justify;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with 
+									desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        <div itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Question">
+                            <h4 itemprop="name" style="color : #ffa314;"> 7. How can websites build trust in customers?</h4>
+                            <div itemprop="acceptedAnswer" itemscope="" itemtype="https://schema.org/Answer">
+                                <div itemprop="text">
+                                    <p style="text-align:justify;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like 
+									Aldus PageMaker including versions of Lorem Ipsum</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Question">
+                            <h4 itemprop="name" style="color : #ffa314;"> 8. How does website design affect sales?</h4>
+                            <div itemprop="acceptedAnswer" itemscope="" itemtype="https://schema.org/Answer">
+                                <div itemprop="text">
+                                    <p style="text-align:justify;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker i
+									ncluding versions of Lorem Ipsum</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Question">
+                            <h4 itemprop="name" style="color : #ffa314;"> 9. How do websites attract customers?</h4>
+                            <div itemprop="acceptedAnswer" itemscope="" itemtype="https://schema.org/Answer">
+                                <div itemprop="text">
+                                    <p style="text-align:justify;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+									publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+                                    
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Question">
+                            <h4 itemprop="name" style="color : #ffa314;"> 10. What are the types of web designs that I can use from?</h4>
+                            <div itemprop="acceptedAnswer" itemscope="" itemtype="https://schema.org/Answer">
+                                <div itemprop="text">
+                                    <p style="text-align:justify;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+                                   
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <div class="pi-section-w pi-section-white">
+                <div class="pi-section pi-padding-bottom-10">
+                    <div class=pi-row>
+                        <div class="pi-col-sm-10 pi-col-sm-offset-1 pi-padding-bottom-60">
+                            <p class="lead-30 pi-text-dark pi-text-center">
+                               WRITE YOUR Quotes!!!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="pi-row pi-grid-big-margins">
+                        <div class="pi-col-sm-3 pi-col-xs-6 pi-padding-bottom-50">
+                            <div class="pi-icon-box-vertical pi-icon-box-vertical-icon-bigger pi-text-center">
+                                <div class="pi-icon-box-icon pi-icon-box-icon-circle pi-icon-box-icon-base" style="background: #ffa314">
+                                    <img src="img_external/icons/80px/light-bulb-lined-white.png" alt="Bangalore's best seo company">
+                                </div>
+                                <h4>
+                                    <a href="#" class=pi-link-dark>
+Search engine optimisation (SEO)
+</a>
+                                </h4>
+                                <p>
+                                    write here
+                                </p>
+                                <p>
+                                    <a href="#" class="btn pi-btn">
+More info
+</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="pi-col-sm-3 pi-col-xs-6 pi-padding-bottom-50">
+                            <div class="pi-icon-box-vertical pi-icon-box-vertical-icon-bigger pi-text-center">
+                                <div class="pi-icon-box-icon pi-icon-box-icon-circle pi-icon-box-icon-base" style="background: #ffa314">
+                                    <img src="img_external/icons/80px/monitor-lined-white.png" alt="One of the top seo companies">
+                                </div>
+                                <h4>
+                                    <a href="#" class=pi-link-dark>
+Social Media Marketing
+</a>
+                                </h4>
+                                <p>
+                                    write here
+                                </p>
+                                <p>
+                                    <a href="#" class="btn pi-btn">More info
+</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="pi-clearfix pi-visible-xs">
+                        </div>
+                        <div class="pi-col-sm-3 pi-col-xs-6 pi-padding-bottom-50">
+                            <div class="pi-icon-box-vertical pi-icon-box-vertical-icon-bigger pi-text-center">
+                                <div class="pi-icon-box-icon pi-icon-box-icon-circle pi-icon-box-icon-base" style="background: #ffa314">
+                                    <img src="img_external/icons/80px/pencil-brush-lined-white.png" alt="Search engine optimization company in bangalore">
+                                </div>
+                                <h4>
+                                    <a href="#" class=pi-link-dark>
+Paid Search (Adwords)
+</a>
+                                </h4>
+                                <p>
+                                    write here
+                                </p>
+                                <p>
+                                    <a href="#" class="btn pi-btn">
+More info
+</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="pi-col-sm-3 pi-col-xs-6 pi-padding-bottom-50">
+                            <div class="pi-icon-box-vertical pi-icon-box-vertical-icon-bigger pi-text-center">
+                                <div class="pi-icon-box-icon pi-icon-box-icon-circle pi-icon-box-icon-base" style="background: #ffa314">
+                                    <img src="img_external/icons/80px/cog-lined-white.png" alt="Best Search engine optimization company in bangalore">
+                                </div>
+                                <h4>
+                                    <a href="#" class=pi-link-dark>
+Website Designing
+</a>
+                                </h4>
+                                <p>
+                                   write here
+                                </p>
+                                <a href="#" class="btn pi-btn">
+More info
+</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pi-row pi-grid-big-margins">
+                        <div class="pi-col-sm-3 pi-col-xs-6 pi-padding-bottom-50">
+                            <div class="pi-icon-box-vertical pi-icon-box-vertical-icon-bigger pi-text-center">
+                                <div class="pi-icon-box-icon pi-icon-box-icon-circle pi-icon-box-icon-base" style="background: #ffa314">
+                                    <img src="img_external/icons/80px/tablet-mobile-lined-white.png" alt="Top Search engine optimization company in bangalore">
+                                </div>
+                                <h4>
+                                    <a href="#" class=pi-link-dark>
+Website Analytics
+</a>
+                                </h4>
+                                <p>
+                                    write here
+                                </p>
+                                <p>
+                                    <a href="#" class="btn pi-btn">
+More info
+</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="pi-col-sm-3 pi-col-xs-6 pi-padding-bottom-50">
+                            <div class="pi-icon-box-vertical pi-icon-box-vertical-icon-bigger pi-text-center">
+                                <div class="pi-icon-box-icon pi-icon-box-icon-circle pi-icon-box-icon-base" style="background: #ffa314">
+                                    <img src="img_external/icons/80px/search-lined-white.png" alt="Search engine optimization companies">
+                                </div>
+                                <h4>
+                                    <a href="#" class=pi-link-dark>
+Mobile Marketing
+</a>
+                                </h4>
+                                <p>write here
+                                </p>
+                                <p>
+                                    <a href="#" class="btn pi-btn">
+More info
+</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="pi-clearfix pi-visible-xs">
+                        </div>
+                        <div class="pi-col-sm-3 pi-col-xs-6 pi-padding-bottom-50">
+                            <div class="pi-icon-box-vertical pi-icon-box-vertical-icon-bigger pi-text-center">
+                                <div class="pi-icon-box-icon pi-icon-box-icon-circle pi-icon-box-icon-base" style="background: #ffa314">
+                                    <img src="img_external/icons/80px/mail-lined-white.png" alt="Search engine optimization in bangalore">
+                                </div>
+                                <h4>
+                                    <a href="#" class=pi-link-dark>
+Email Marketing
+</a>
+                                </h4>
+                                <p>
+                                    write here
+                                </p>
+                                <p>
+                                    <a href="#" class="btn pi-btn">
+More info
+</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="pi-col-sm-3 pi-col-xs-6 pi-padding-bottom-50">
+                            <div class="pi-icon-box-vertical pi-icon-box-vertical-icon-bigger pi-text-center">
+                                <div class="pi-icon-box-icon pi-icon-box-icon-circle pi-icon-box-icon-base" style="background: #ffa314">
+                                    <img src="img_external/icons/80px/compass-lined-white.png" alt="Search engine optimization agencies in bangalore">
+                                </div>
+                                <h4>
+                                    <a href="#" class=pi-link-dark>
+App Development
+</a>
+                                </h4>
+                                <p>
+                                    write here
+                                </p>
+                                <p>
+                                    <a href="#" class="btn pi-btn">
+More info
+</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pi-section-w pi-shadow-inside-top pi-section-parallax" style="background-image: url(img_external/gallery/consulting.jpg)">
+                <div class=pi-texture style="background: rgba(31, 37, 44, 0.85)">
+                </div>
+                <div class="pi-section pi-padding-top-110 pi-padding-bottom-100 pi-text-center">
+                    <h3 class="pi-uppercase pi-weight-700 pi-letter-spacing pi-margin-bottom-20">
+                        Want to work with us?
+                    </h3>
+                    <p>
+                        <a href="#" class="btn pi-btn-contur-3 pi-btn-big">
+Get in Touch
+</a>
+                        <span class=pi-or>
+or
+</span>
+                        <a href="#" class="btn pi-btn-base pi-btn-no-border pi-shadow pi-btn-big">
+Get a Free Quote
+</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <section id="team" style="background-color: #f8f8f8 !important;">
+        <div class="container client-code">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="team-bg">
+
+                        <div class="team">
+                            <div class="team-img">
+                                <img src="img/clnt/l1.png" alt="website development agencies in cbe" />
+                            </div>
+                        </div>
+
+                        <div class="team">
+                            <div class="team-img">
+                                <img src="img/clnt/l2.png" alt="website design & development companies in cbe" />
+                            </div>
+                        </div>
+
+                        <div class="team">
+                            <div class="team-img">
+                                <img src="img/clnt/l3.png" alt=" website design companies in cbe" />
+                            </div>
+                        </div>
+
+                        <div class="team">
+                            <div class="team-img">
+                                <img src="img/clnt/l4.png" alt="best website development company cbe" />
+                            </div>
+                        </div>
+
+                        <div class="team">
+                            <div class="team-img">
+                                <img src="img/clnt/l12.png" alt="top website design agencies in cbe 1" />
+                            </div>
+                        </div>
+
+                        <div class="team">
+                            <div class="team-img">
+                                <img src="img/clnt/l5.png" alt="premium website development companies in cbe" />
+                            </div>
+                        </div>
+
+                        <div class="team">
+                            <div class="team-img">
+                                <img src="img/clnt/l6.png" alt="top website development companies" />
+                            </div>
+                        </div>
+
+                        <div class="team">
+                            <div class="team-img">
+                                <img src="img/clnt/l7.png" alt="best website design & development companies" />
+                            </div>
+                        </div>
+
+                        <div class="team">
+                            <div class="team-img">
+                                <img src="img/clnt/l8.png" alt="website development cbe" />
+                            </div>
+                        </div>
+
+                        <div class="team">
+                            <div class="team-img">
+                                <img src="img/clnt/l9.png" alt="website desining companies in cbe 1" />
+                            </div>
+                        </div>
+
+                        <div class="team">
+                            <div class="team-img">
+                                <img src="img/clnt/l10.png" alt="website development agencies in bangalore 1" />
+                            </div>
+                        </div>
+
+                        <div class="team">
+                            <div class="team-img">
+                                <img src="img/clnt/l11.png" alt="website development companies in jayanagar" />
+                            </div>
+                        </div>
+
+                        <div class="team">
+                            <div class="team-img">
+                                <img src="img/clnt/l13.png" alt="website design companies in Kormangala" />
+                            </div>
+                        </div>
+
+                        <div class="team">
+                            <div class="team-img">
+                                <img src="img/clnt/l14.png" alt="website development companies in jp nagar" />
+                            </div>
+                        </div>
+
+                        <div class="team">
+                            <div class="team-img">
+                                <img src="img/clnt/l15.png" alt="website designing companies in BTM Layout" />
+                            </div>
+                        </div>
+
+                        <!--<div class="team">
+                                    <div class="team-img">
+                                        <img src="img/clnt/l16.png" alt="digital marketing companies in Indiranagar"/>
+                                    </div>
+                                </div>-->
+
+                        <div class="team">
+                            <div class="team-img">
+                                <img src="img/clnt/l17.png" alt="website development Agencies in jayanagar" />
+                            </div>
+                        </div>
+
+                        <div class="team">
+                            <div class="team-img">
+                                <img src="img/clnt/l18.png" alt="website designing agency in banashankri" />
+                            </div>
+                        </div>
+
+                        <div class="team">
+                            <div class="team-img">
+                                <img src="img/clnt/l19.png" alt="top website development companies in Koramangala" />
+                            </div>
+                        </div>
+
+                        <div class="team">
+                            <div class="team-img">
+                                <img src="img/clnt/l20.png" alt="best website desining company in Koramangala" />
+                            </div>
+                        </div>
+
+
+                        <div class="team">
+                            <div class="team-img">
+                                <img src="img/clnt/l21.png" alt="website development companies in Koramangala" />
+                            </div>
+                        </div>
+
+
+                        <div class="team">
+                            <div class="team-img">
+                                <img src="img/clnt/l22.png" alt="Top website design companies in Koramangala" />
+                            </div>
+                        </div>
+
+                        <div class="team">
+                            <div class="team-img">
+                                <img src="img/clnt/l23.png" alt="top website development companies in india" />
+                            </div>
+                        </div>
+
+                        <div class="team">
+                            <div class="team-img">
+                                <img src="img/clnt/l24.png" alt="best website development companies in india" />
+                            </div>
+                        </div>
+
+                        <div id="left-arr"> </div>
+                        <div id="right-arr"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="pi-section-w pi-shadow-inside-top pi-section-base desktop-btn1">
+            <div class="pi-texture" style="background: url(img/hexagon.png) repeat; border-bottom: 1px solid #9999995e;">
+            </div>
+            <div class="pi-section  pi-text-center">
+
+                <p class="lead-30 pi-text-white">
+                    Start working with us today!
+                    <span class="pi-weight-400">
+                                     Join with us
+                                </span>
+
+                    <a href="#" class="btn-base1" style="margin-left: 106px">
+                                  
+                                  <i class="icon-phone pi-icon-left">
+                                  </i>
+                                  Click here
+                                </a>
+                </p>
+            </div>
+        </div>
+
+        <div class="pi-section-w pi-shadow-inside-top pi-section-base mobile-btn1">
+            <div class="pi-texture" style="background: url(img/hexagon.png) repeat; border-bottom: 1px solid #9999995e;">
+            </div>
+            <div class="pi-section  pi-text-center">
+
+                <p class="lead-30 pi-text-white">
+                    Start working with us today!
+                    <span class="pi-weight-400">
+                                    Join with us!
+                                </span>
+                </p>
+                <a href="#" class="btn-base1">
+                                  
+           Click here
+                                </a>
+            </div>
+        </div>
+    </section>
+    </div>
+
+
+    <div class="pi-section-w pi-border-bottom pi-border-top-light pi-section-dark">
+        <div class="pi-section pi-padding-bottom-10" style="max-width:2500px;">
+            <div class="pi-row">
+                <div class="pi-col-md-4 pi-col-sm-6 pi-padding-bottom-30">
+                    <h6 class="pi-margin-bottom-25 pi-weight-700 pi-uppercase pi-letter-spacing">
+
+                        <a href="#" class="pi-link-no-style">
+              Our Locations
+            </a>
+                    </h6>
+
+                    <div class="pi-footer-tweets">
+
+                        <ul class="pi-bullets-circle pi-bullets-base pi-bullets pi-list-big-margins">
+
+                            <li>
+
+                                <span class="pi-bullet-icon">
+                  
+                  <i class="fa fa-check" style="color:#FFA500"></i>
+                  
+                </span>
+
+                                <a class="footer-text" href="#">
+                  Digital Marketing companies in Othakalmandapam
+                </a>
+
+                            </li>
+
+                            <li>
+
+                                <span class="pi-bullet-icon">
+                  
+                 
+                  <i class="fa fa-check" style="color:#FFA500"></i>
+                </span>
+
+                                <a class="footer-text" href="#">
+                  Digital Marketing companies in Kodikkalpalayam
+                </a>
+
+                            </li>
+                            <li>
+
+                                <span class="pi-bullet-icon">
+                  
+                  <i class="fa fa-check" style="color:#FFA500">
+                  </i>
+                </span>
+
+                                <a class="footer-text" href="#">
+                  Digital Marketing companies in coimbatore
+                </a>
+
+                            </li>
+                            <li>
+                                <li>
+                                    <span class="pi-bullet-icon">
+                    
+                    <i class="fa fa-check" style="color:#FFA500">
+                    </i>
+                  </span>
+
+                                    <a class="footer-text" href="#">
+                    Digital Marketing companies in Chennai
+                  </a>
+
+                                </li>
+                                <li>
+
+                                    <span class="pi-bullet-icon">
+                  
+                  <i class="fa fa-check" style="color:#FFA500">
+                  </i>
+                </span>
+
+                                    <span class="pi-bullet-icon">
+                    
+                    <i class="fa fa-check" style="color:#FFA500">
+                    </i>
+                  </span>
+
+                                    <a class="footer-text" href="#">
+                    Digital Marketing companies in Dubai
+                  </a>
+
+                                </li>
+                                <li>
+
+                                    <span class="pi-bullet-icon">
+                  
+                  <i class="fa fa-check" style="color:#FFA500">
+                  </i>
+                </span>
+
+                                    <a class="footer-text" href="#">
+                  Digital Marketing companies in Thirvarur
+                </a>
+
+                                </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <!--<div class="pi-clearfix pi-hidden-lg-only pi-hidden-md-only">-->
+                <!--</div>-->
+
+                <!--<div class="pi-clearfix pi-hidden-lg-only pi-hidden-md-only">-->
+                <!--</div>-->
+                <!--    <div class="pi-clearfix pi-hidden-lg-only pi-hidden-md-only"></div>-->
+
+                <div class="pi-col-md-3 pi-col-sm-6 pi-padding-bottom-30">
+                    <h4 class="pi-margin-bottom-25 pi-weight-700 pi-uppercase pi-letter-spacing">
+                        <a href="services.html" class="pi-link-no-style"><span class="pi-margin-bottom-25 pi-weight-700 pi-uppercase pi-letter-spacing" style="font-size:15px;"> Digital Services </span></a>
+                    </h4>
+                    <div class="pi-footer-tweets">
+                        <ul class="pi-bullets-circle pi-bullets-base ">
+                            <li style="padding-left:0; margin:2px 0px">
+                                <span class="">
+                       <i class="fa fa-check" style="color:#FFA500"></i>
+                       </span>
+                                <a class="footer-text" href="#"> Search Engine Optimization </a>
+                            </li>
+                            <li style="padding-left:0; margin:2px 0px">
+                                <span class="">
+                       <i class="fa fa-check" style="color:#FFA500"></i>
+                       </span>
+                                <a class="footer-text" href="#"> Social Media Marketing </a>
+                            </li>
+                            <li class="footer-text" style="padding-left:0; margin:2px 0px">
+                                <span class="">
+                       <i class="fa fa-check" style="color:#FFA500"></i>
+                       </span>
+                                <a class="footer-text" href="#.html"> Paid Search (Adwords) </a>
+                            </li>
+                            <li style="padding-left:0; margin:2px 0px">
+                                <span class="">
+                       <i class="fa fa-check" style="color:#FFA500"></i>
+                       </span>
+                                <a class="footer-text" href="#"> Website Designing </a>
+                            </li>
+                            <li style="padding-left:0; margin:2px 0px">
+                                <span class="">
+                       <i class="fa fa-check" style="color:#FFA500"></i>
+                       </span>
+                                <a class="footer-text" href="#"> Web Analytics </a>
+                            </li>
+                            <li style="padding-left:0; margin:2px 0px">
+                               <span class=""> 
+                       <i class="fa fa-check" style="color:#FFA500"></i>
+                       </span>
+                                <a class="footer-text" href="#"> Mobile Marketing </a>
+                            </li>
+                            <li style="padding-left:0; margin:2px 0px">
+                                <span class="">
+                       <i class="fa fa-check" style="color:#FFA500"></i>
+                       </span>
+                                <a class="footer-text" href="#"> Email Marketing </a>
+                            </li>
+                            <li style="padding-left:0; margin:2px 0px">
+                                <span class="">
+                       <i class="fa fa-check" style="color:#FFA500"></i>
+                       </span>
+                                <a class="footer-text" href="#"> App Development </a>
+                            </li>
+                            <li style="padding-left:0; margin:2px 0px">
+                                <span class="">
+                       <i class="fa fa-check" style="color:#FFA500"></i>
+                       </span>
+                                <a class="footer-text" href="#"> Digital Marketing Training </a>
+                            </li>
+
+                            <li style="padding-left:0; margin:2px 0px">
+                                <span class="">
+                       <i class="fa fa-check" style="color:#FFA500"></i>
+                       </span>
+                                <a class="footer-text" href="#"> Video Production Company </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="pi-clearfix pi-hidden-lg-only pi-hidden-md-only"></div>
+
+                <div class="pi-col-md-3 pi-col-sm-6 pi-padding-bottom-30" style="background-image:url(img/map-base.png);background-position:50% 55px;background-repeat:no-repeat">
+                    <h6 class="pi-margin-bottom-25 pi-weight-700 pi-uppercase pi-letter-spacing"> Contact Us </h6>
+                    <ul class="pi-list-with-icons pi-list-big-margins">
+                        <li>
+                            <span class="pi-bullet-icon">
+                    <i class="fa fa-map-marker" style="color:#FFA500" aria-hidden="true"></i>
+                    </span>
+                            <div class="footer-text">
+                                <span>Company Name</span>
+                                <div>
+                                    <span>Street</span>
+                                    <span>city</span>,
+                                    <span>State</span>,
+                                    <span>Country</span>
+                                    <span>pincode</span>
+
+                                    <!--  <ul class="pi-list-with-icons pi-list-big-margins">
+                             <li>
+                                <span class="pi-bullet-icon">
+                                <i class="icon-phone"></i>
+                                </span>
+                                <strong> Phone: </strong>
+                        <span itemprop="telephone">  </span>
+                    </li>
+                </ul>-->
+                                    <div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <li class="footer-text">
+
+                                <span class="pi-bullet-icon">
+
+               <i class="fa fa-map-marker" style="color:#FFA500" aria-hidden="true"></i>
+              </span>
+                                <div class="footer-text">
+                                    <strong class="footer-text">
+                Headquarters:
+              </strong> Write address
+                                </div>
+                            </li>
+
+                            <li style="margin-bottom:50px;">
+                                <span class="pi-bullet-icon">
+                    <i class="fa fa-phone"style="color:#FFA500"></i>
+                    <span>   Mobile No: 
+                    91000000       
+                    </span>
+                                </span>
+                            </li>
+
+                            <li>
+                                <span class="pi-bullet-icon">
+                    <i class="fa fa-envelope" style="color:#FFA500"></i>
+                    <span>  Email: 
+
+                    email@xxx.com
+                    </span>
+                                </span>
+                            </li>
+                    </ul>
+                </div>
+                <ul></ul>
+                <div class="pi-col-md-2 pi-col-sm-6 pi-padding-bottom-30">
+                    <h6 class="pi-margin-bottom-25 pi-weight-800 pi-uppercase pi-letter-spacing"> Get Free SEO Audit </h6>
+                    <form class="form-style" action="contact_us.php" method=post>
+                        <div class="pi-error-container"></div>
+                        <div class="pi-row pi-grid-small-margins">
+                            <div class="form-group">
+                                <div class="pi-input-with-icon">
+                                    <div class="pi-input-icon">
+                                        <i class="fa fa-user"></i>
+                                    </div>
+                                    <input class="required-item form-control" value="" name=name id=name aria-required=true placeholder="Your Name*">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="pi-input-with-icon">
+                                    <div class="pi-input-icon">
+                                        <i class="fa fa-envelope"></i>
+                                    </div>
+                                    <input type=email class="required-item form-control" id=mail name=mail value="" aria-required=true placeholder="Your Email*">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="pi-input-with-icon">
+                                    <div class="pi-input-icon">
+                                        <i class="fa fa-phone"></i>
+                                    </div>
+                                    <input class="required-item form-control" aria-required=true id=phone name=phone value="" placeholder="Your Phone*">
+                                </div>
+                            </div>
+                            <p>
+                                <button type="submit" class="btn pi-btn-base pi-btn-no-border"> Submit </button>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="pi-section-w pi-section-dark pi-border-top-light pi-border-bottom-strong-base">
+            <div class="pi-section pi-row-lg pi-center-text-2xs pi-clearfix">
+                <div class="pi-row-block pi-pull-right pi-hidden-2xs">
+                    <ul class="pi-social-icons-simple pi-small clearFix">
+                        <li>
+                            <a href="#" target="_blank" class="pi-social-icon-facebook">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" class="pi-social-icon-twitter">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                        </li>
+
+                        <li>
+                            <a href="#" target="_blank" class="pi-social-icon-linkedin">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" class="pi-social-icon-pinterest">
+                            <i class="fa fa-pinterest"></i>
+                        </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="pi-row-block pi-row-block-logo pi-row-block-bordered">
+                    <a href="#">
+                <img src="img/#.png" alt="opacity-dark">opacity-dark here
+            </a>
+                </div>
+                <span class="pi-row-block pi-row-block-txt pi-hidden-xs" style="color:white;"> &copy; 2020. &laquo; 
+           <a href="#" style="color:white;"> Shamim Imtiyaz</a> &raquo;. All right reserved. 
+           </span>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="pi-scroll-top-arrow" data-scroll-to="0"></div>
+
+
+    <script src="scripts/custom.js"></script>
+    <script src="3dParty/jquery-1.11.0.min.js"></script>
+    <script src="3dParty/bootstrap/js/bootstrap.min.js"></script>
+    <script src="3dParty/jquery.touchSwipe.min.js"></script>
+    <script src="3dParty/gauge.min.js"></script>
+    <script src="3dParty/inview.js"></script>
+    <!--<script src="3dParty/requestAnimationFramePolyfill.min.js"></script>-->
+    <script src="3dParty/jquery.placeholder.js"></script>
+    <script src="3dParty/jquery.scrollTo.min.js"></script>
+    <script src="scripts/pi.global.min.js"></script>
+    <script src="scripts/pi.slider.min.js"></script>
+    <script src="scripts/pi.init.slider.min.js"></script>
+    <script src="scripts/pi.tooltip.min.js"></script>
+    <script src="scripts/pi.init.tooltip.min.js"></script>
+    <script src="3dParty/jquery.easing.1.3.js"></script>
+    <script src="scripts/pi.counter.min.js"></script>
+    <!--<script src="scripts/pi.init.counter.min.js"></script>-->
+    <script src="scripts/pi.tab.min.js"></script>
+    <script src="scripts/pi.init.tab.min.js"></script>
+    <script src="scripts/pi.parallax.min.js"></script>
+    <!--<script src="scripts/pi.init.parallax.min.js"></script>-->
+    <script src="settings/settings.js"></script>
+    </div>
+
+    <!--3dParty/requestAnimationFramePolyfill.min.js-->
+    <script>
+        (function() {
+            var lastTime = 0;
+            var vendors = ["ms", "moz", "webkit", "o"];
+            for (var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
+                window.requestAnimationFrame = window[vendors[x] + "RequestAnimationFrame"];
+                window.cancelAnimationFrame = window[vendors[x] + "CancelAnimationFrame"] || window[vendors[x] + "CancelRequestAnimationFrame"]
+            }
+            if (!window.requestAnimationFrame) {
+                window.requestAnimationFrame = function(callback, element) {
+                    var currTime = new Date().getTime();
+                    var timeToCall = Math.max(0, 16 - (currTime - lastTime));
+                    var id = window.setTimeout(function() {
+                        callback(currTime + timeToCall)
+                    }, timeToCall);
+                    lastTime = currTime + timeToCall;
+                    return id
+                }
+            }
+            if (!window.cancelAnimationFrame) {
+                window.cancelAnimationFrame = function(id) {
+                    clearTimeout(id)
+                }
+            }
+        }());
+    </script>
+
+    <!--scripts/pi.init.counter.min.js-->
+    <script>
+        jQuery(function($) {
+            $.fn.piCounter && $(".pi-counter").each(function() {
+                $(this).one("inview", function() {
+                    $(this).piCounter()
+                })
+            })
+        });
+    </script>
+
+    <!--scripts/pi.init.parallax.min.js-->
+    <script>
+        jQuery(function($) {
+            $.fn.parallax && $(".pi-section-parallax").parallax("50%", .5)
+        });
+    </script>
+
+    <!--scripts/pi.init.tab.min.js-->
+    <script>
+        jQuery(function($) {
+            function checkActivatedTab() {
+                var hash = window.location.hash,
+                    $tabToShow = $('ul.pi-tabs-navigation a[href="' + hash + '"]');
+                $tabToShow.length && hash && $tabToShow.tab("show")
+            }
+            if ($.fn.tab) {
+                var $nav = $(".pi-tabs-navigation a");
+                $nav.click(function(e) {
+                    $(this).tab("show"), e.preventDefault()
+                }), $(".pi-tabs-vertical").each(function() {
+                    var $parent = $(this),
+                        $nav = $parent.find(".pi-tabs-navigation"),
+                        $content = $parent.find(".pi-tabs-content"),
+                        navHeight = $nav.height();
+                    $content.css({
+                        minHeight: Math.abs(navHeight) + 1
+                    })
+                }), $("a.pi-tab-link").click(function() {
+                    if ($.fn.scrollTo) {
+                        var hash = $(this).get(0).hash,
+                            $el = $(hash);
+                        $el.length && ($el = $el.eq(0), $.scrollTo($el.parent()))
+                    }
+                }), $nav.length && ($(window).on("hashchange", function() {
+                    checkActivatedTab()
+                }), checkActivatedTab())
+            }
+        });
+    </script>
+
+    <!-- tabs -->
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+
+    <!--<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+</script>-->
+
+
+
+</body>
+
+</html>
